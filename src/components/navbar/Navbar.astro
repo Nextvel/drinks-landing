@@ -1,0 +1,103 @@
+---
+"is:inline"
+import '@fontsource/luckiest-guy';
+---
+
+<nav class="flex items-center justify-between px-10 py-3 bg-drinks-backgroundPrimaryColor shadow">
+  <!-- Logo -->
+  <div class="flex items-center flex-shrink-0">
+    <img src="/logos/ic-logo.png" alt="Logo DRINKS" class="h-20 w-auto mr-2" />
+    <span class="font-bold text-2xl tracking-widest text-drinks-whiteColor font-primary-sigmar">DRINKS</span>
+  </div>
+
+  <!-- Menú de escritorio -->
+  <div class="hidden md:flex items-center space-x-8">
+    <div class="flex justify-between w-fit  ">
+      <div class="relative group mx-10">
+        <button class="inline-flex items-center 
+         opacity-70 transform transition-all
+            duration-500 hover:opacity-100 hover:scale-125
+        text-drinks-neonTwoColor font-medium">
+          Productos
+          <svg class="ml-1 h-4 w-4 fill-current" viewBox="0 0 20 20">
+            <path d="M5.516 7.548l4.484 4.484 4.484-4.484" />
+          </svg>
+        </button>
+        <div class="absolute hidden group-hover:block bg-white shadow mt-1">
+          <!-- <a href="#" class="block px-4 py-2 hover:bg-gray-100">Producto 1</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Producto 2</a> -->
+        </div>
+      </div>
+
+      <div class="relative group mx-10">
+        <button class="inline-flex items-center opacity-70 
+        transform transition-all duration-500 
+        hover:opacity-100 hover:scale-125
+        text-drinks-neonOneColor font-medium">
+          Nosotros
+          <svg class="ml-1 h-4 w-4 fill-current" viewBox="0 0 20 20">
+            <path d="M5.516 7.548l4.484 4.484 4.484-4.484" />
+          </svg>
+        </button>
+        <div class="absolute hidden group-hover:block shadow pt-3">
+          <a href="#" class="block opacity-70 
+          transform transition-all duration-500 
+          text-drinks-neonTwoColor py-3 hover:opacity-100 hover:scale-125">Hiller Kbron</a>
+          <a href="#" class="block opacity-70 
+          transform transition-all duration-500 
+          text-drinks-neonPrimaryColor py-3 hover:opacity-100 hover:scale-125
+          ">Don P</a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="inline-block bg-drinks-neonFourColor
+     opacity-70 
+          transform transition-all duration-500 
+           text-white
+     font-medium px-4 py-2 rounded-full  hover:opacity-100 hover:scale-110">
+      Descargá la APP
+    </a>
+  </div>
+
+  <!-- Botón Hamburguesa (solo en móviles) -->
+  <button id="menu-toggle" class="md:hidden flex items-center text-drinks-neonPrimaryColor focus:outline-none">
+    <img src="/icons/ic-menu.svg" alt="menu" class="w-15 h-15" />
+  </button>
+
+
+
+</nav>
+
+<div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden 
+transition-all duration-1000 ease-in-out flex flex-col items-end space-y-1 shadow px-6">
+    <a href="#" class="block pr-6 text-drinks-neonOneColor opacity-50 transform transition 
+    duration-300 ease-in-out hover:scale-110 hover:opacity-100">
+      Productos
+    </a>
+    <a href="#" class="block pr-6 text-drinks-neonTwoColor opacity-50 transform transition duration-300 ease-in-out hover:scale-110 hover:opacity-100">
+      Nosotros
+    </a>
+    <a href="#" class="block mr-6 bg-drinks-neonFourColor opacity-50 text-white font-medium px-4 py-2 rounded-full text-center mt-2 transform transition duration-300 ease-in-out hover:scale-105 hover:opacity-100">
+      Descargá la APP
+    </a>
+  </div>
+
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+  
+      if (menuToggle && menu) {
+        menuToggle.addEventListener("click", () => {
+            if (menu.classList.contains("max-h-0")) {
+          menu.classList.remove("max-h-0");
+          menu.classList.add("max-h-[300px]"); // Ajusta el tamaño si es necesario
+        } else {
+          menu.classList.remove("max-h-[300px]");
+          menu.classList.add("max-h-0");
+        }
+        });
+      }
+    });
+  </script>
+  

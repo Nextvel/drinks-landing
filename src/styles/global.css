@@ -1,1 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 @import "tailwindcss";
+
+
+/* Bloque de colores DRINKS */
+@theme {
+
+/* Fonts */
+    --font-primary-sigmar:'Sigmar','sans-serif';
+
+
+  /* Background Colors */
+  --color-drinks-backgroundPrimaryColor: #0d0d1a;
+
+  /* Colors Principal */
+  --color-drinks-neonOneColor: #00ff00;
+  --color-drinks-neonTwoColor: #e7c500;
+  --color-drinks-neonThreeColor: #f82d97;
+  --color-drinks-neonFourColor: #c501e2;
+  --color-drinks-neonPrimaryColor: #00ffff;
+  
+  /* Default Colors*/
+  --color-drinks-whiteColor: #ffffff;
+  --color-drinks-darkBlack: #010001;
+  --color-drinks-deepCyan: #001111;
+}

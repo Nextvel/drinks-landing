@@ -1,0 +1,65 @@
+
+---
+import { Picture } from 'astro:assets';
+---
+<section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10">
+    <!-- Contenido de texto -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold
+       text-drinks-neonPrimaryColor leading-tight flex items-center">
+        🎉 La revolución digital de la vida nocturna 🕺💃
+      </h1>
+      <p class="text-lg text-gray-300 mt-15">
+        Con <strong class="text-drinks-neonTwoColor">DRINK’S</strong>, la fiesta empieza antes de salir. 🍾✨ 
+        Encuentra los mejores bares y discotecas, <span class="text-drinks-neonThreeColor px-1 rounded-md">reserva tu mesa en segundos</span> 📲, 
+        haz pedidos desde la app 🍹 y accede a zonas VIP con beneficios exclusivos.  
+        Seguridad, comodidad y diversión en un solo lugar.  
+      </p>
+
+      <!-- Stickers de features -->
+      <div class="flex flex-wrap gap-3 mt-15 justify-center">
+        <span class="bg-purple-100 text-purple-700 text-sm px-3 py-1 rounded-full flex items-center">
+          🎟️ Reservas al instante
+        </span>
+        <span class="bg-blue-100 text-blue-700 text-sm px-3 py-1 rounded-full flex items-center">
+          🚖 Servicio de Taxis VIP
+        </span>
+        <span class="bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full flex items-center">
+          🎶 Conéctate con el DJ
+        </span>
+        <span class="bg-red-100 text-red-700 text-sm px-3 py-1 rounded-full flex items-center">
+          🔒 Seguridad Inteligente
+        </span>
+      </div>
+  
+      <!-- Botones de descarga y QR -->
+      <div class="flex flex-col md:flex-row items-center mt-6 gap-4 justify-center">
+        <a href="#" class="flex items-center bg-gray-100 px-5
+         py-1.5 rounded-2xl shadow hover:shadow-md transition">
+          <img src="/icons/ic-google-play.svg" alt="Google Play" class="h-7 mr-2" />
+          <span class="text-gray-900 font-medium">Descarga en <br><strong>Google Play</strong></span>
+        </a>
+  
+        <!-- <a href="#" class="flex items-center bg-gray-100 px-4 py-3 rounded-lg shadow hover:shadow-md transition">
+          <img src="/icons/app-store.svg" alt="App Store" class="h-6 mr-2" />
+          <span class="text-gray-900 font-medium">Descarga en <br><strong>App Store</strong></span>
+        </a>
+   -->
+        <img src="/images/ic-qr.png" alt="QR para descargar" class="h-16 md:h-20 border-2 border-gray-300 rounded-lg shadow-md" />
+      </div>
+    </div>
+  
+    <!-- Imagen del móvil y tarjetas -->
+    <div class="md:w-1/2 flex justify-center mt-8 md:mt-0 relative">
+        <img src="/images/ic-banner.png" 
+        alt="App DRINK’S y experiencia digital" 
+        class="max-w-full w-full h-auto" />
+      
+        <div class="absolute top-4 left-4 bg-white px-3 py-1 rounded-lg shadow-md text-sm font-semibold text-gray-700">
+        📍 Locales cercanos
+      </div>
+      <div class="absolute bottom-4 right-4 bg-yellow-400 px-3 py-1 rounded-lg shadow-md text-sm font-semibold text-white">
+        ⭐ Experiencia VIP
+      </div>
+    </div>
+</section>
